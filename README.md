@@ -43,7 +43,7 @@ ZenSpace/
 
 ## 🧘 Booking a Session
 
-Visit the [Book Your Retreat](book.html) section to fill out a simple form. Upon submission, a **thank you popup** will appear to confirm your booking.
+Visit the [Book Your Retreat]([book.html](https://sid16p.github.io/ZenSpace/book.html)) section to fill out a simple form. Upon submission, a **thank you popup** will appear to confirm your booking.
 
 
 ## 📌 How to Use
@@ -65,12 +65,12 @@ Feel free to fork this project and submit pull requests for:
 Have questions or suggestions?
 
 📧 Email: info@zenspace.com 
-🌐 Website: ZenSpace
-📱 WhatsApp: Click to Chat
+🌐 Website: ZenSpace(https://sid16p.github.io/ZenSpace/)
+📱 WhatsApp: Click to Chat(https://wa.me/919876543210)
 
 🙏 Thank You
 Thank you for visiting ZenSpace and booking your wellness journey.
 Let your soul shine and your body find balance. 🌸🧘‍♂️
 
 📸 Preview
-ZenSpace.png
+ZenSpace Landing Page(ZenSpace.png)
