@@ -73,4 +73,4 @@ Thank you for visiting ZenSpace and booking your wellness journey.
 Let your soul shine and your body find balance. 🌸🧘‍♂️
 
 📸 Preview
-[ZenSpace Landing Page](ZenSpace.png)
+[ZenSpace Landing Page](images/ZenSpace.png)
