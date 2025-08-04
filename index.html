@@ -140,21 +140,36 @@
   <!-- Testimonials -->
   <section class="testimonials" id="testimonials">
     <h2><i class="fas fa-comment-dots"></i> What Our Guests Say</h2>
-    <div class="testimonial-cards">
-      <div class="testimonial">
-        <p>“A truly transformative experience! The calm, the instructors, the food – everything was perfect.”</p>
-        <h4>– Meera S.</h4>
-      </div>
-      <div class="testimonial">
-        <p>“It felt like a soul reset. I left refreshed, inspired, and totally Zen.”</p>
-        <h4>– Rahul P.</h4>
-      </div>
-    </div>
+    <div class="testimonial-carousel">
+  <div class="testimonial-slide active">
+    <p>“This retreat changed my life. Peaceful and energizing!”</p>
+    <h4>- Aanya R.</h4>
+  </div>
+  <div class="testimonial-slide">
+    <p>“Amazing instructors and serene environment. Loved it!”</p>
+    <h4>- Rahul D.</h4>
+  </div>
+  <div class="testimonial-slide">
+    <p>“A perfect getaway from daily stress. Highly recommended.”</p>
+    <h4>- Meera S.</h4>
+  </div>
+</div>
   </section>
 
   <!-- Contact -->
   <section class="contact" id="contact">
     <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+    <div class="contact-map">
+  <h3>Visit Us</h3>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.1160983447!2d72.74110132730202!3d19.082522317035774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63dd302cf05%3A0x95240edbfa1a56f!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1631302428594!5m2!1sen!2sin" 
+    width="100%" 
+    height="300" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy">
+  </iframe>
+</div>
     <p>📍 Mumbai, Maharashtra, India</p>
     <p>📧 <a href="mailto:info@zenspace.com">info@zenspace.com</a></p>
     <p>📞 +91 98765 43210</p>
@@ -197,6 +212,21 @@
   </div>
 </footer>
 
+<a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+  <img src="images/whatsapp.jpeg" alt="WhatsApp Icon" />
+</a>
+<script>
+  let current = 0;
+  const slides = document.querySelectorAll('.testimonial-slide');
+
+  function showNextSlide() {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+  }
+
+  setInterval(showNextSlide, 4000); // Change every 4 seconds
+</script>
 
 </body>
 </html>
