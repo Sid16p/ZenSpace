@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Your Retreat – ZenSpace</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="logo"><img src="C:\Users\dell\OneDrive\Desktop\Internship Task\Task 1\images\Logo.jpg" alt="ZenSpace Logo"></div>
+    <nav>
+      <ul>
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#sessions">Sessions</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="#" class="highlight">Book</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="booking-page">
+  <h1>Book Your Retreat</h1>
+  <p>Select your dates, tell us your preferences, and we’ll take care of the rest.</p>
+
+  <form class="booking-form" onsubmit="return showThankYou(event)">
+  <input type="text" name="name" placeholder="Full Name" required />
+  <input type="email" name="email" placeholder="Email Address" required />
+  <input type="tel" name="phone" placeholder="Phone Number" required />
+  <select name="retreat-duration" required>
+    <option value="">Select Duration</option>
+    <option value="3">3 Days</option>
+    <option value="5">5 Days</option>
+    <option value="7">7 Days</option>
+  </select>
+  <textarea name="message" rows="4" placeholder="Any special requests?"></textarea>
+  <button type="submit">Submit Booking Request</button>
+</form>
+
+<!-- Thank You Popup -->
+<div id="thankYouPopup" class="popup-overlay">
+  <div class="popup-box">
+    <h2>Thank You!</h2>
+  </div>
+</div>
+
+</section>
+
+  <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <h3>ZenSpace</h3>
+      <p>Where breath meets balance.<br>We help you reconnect with yourself.</p>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 ZenSpace. All rights reserved.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
