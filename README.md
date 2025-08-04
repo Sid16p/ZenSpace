@@ -65,12 +65,12 @@ Feel free to fork this project and submit pull requests for:
 Have questions or suggestions?
 
 📧 Email: info@zenspace.com 
-🌐 Website: ZenSpace(https://sid16p.github.io/ZenSpace/)
-📱 WhatsApp: Click to Chat(https://wa.me/919876543210)
+🌐 Website: [ZenSpace](https://sid16p.github.io/ZenSpace/)
+📱 WhatsApp: [Click to Chat](https://wa.me/919876543210)
 
 🙏 Thank You
 Thank you for visiting ZenSpace and booking your wellness journey.
 Let your soul shine and your body find balance. 🌸🧘‍♂️
 
 📸 Preview
-ZenSpace Landing Page(ZenSpace.png)
+[ZenSpace Landing Page](ZenSpace.png)
