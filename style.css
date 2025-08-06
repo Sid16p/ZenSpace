@@ -122,6 +122,12 @@ nav a:hover {
   color: #6a9c89;
 }
 
+.sessions .card p:last-of-type {
+  font-weight: 600;
+  color: #333;
+  margin-top: 5px;
+}
+
 /* Footer */
 .footer {
   background-color: #1e2b2d;
