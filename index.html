@@ -180,23 +180,82 @@
 </section>
 
   <!-- Testimonials -->
-  <section class="testimonials" id="testimonials">
-    <h2><i class="fas fa-comment-dots"></i> What Our Guests Say</h2>
-    <div class="testimonial-carousel">
-  <div class="testimonial-slide active">
-    <p>“This retreat changed my life. Peaceful and energizing!”</p>
-    <h4>- Aanya R.</h4>
+  <section class="testimonial-section" id="testimonials">
+  <div class="testimonial-header">
+    <h2>What Our Guests Say</h2>
+    <p>Hear from those who have found peace and transformation at ZenSpace</p>
   </div>
-  <div class="testimonial-slide">
-    <p>“Amazing instructors and serene environment. Loved it!”</p>
-    <h4>- Rahul D.</h4>
+
+  <div class="testimonial-container">
+    <button class="nav-btn left-btn" onclick="changeSlide(-1)">&#10094;</button>
+
+    <div class="testimonial-slide active">
+      <div class="testimonial-card">
+        <div class="user-info">
+          <div class="avatar purple"><i class="fas fa-user"></i></div>
+          <div>
+            <h3>Maria Santos</h3>
+            <p>Teacher</p>
+          </div>
+        </div>
+        <p class="testimonial-text">
+          "The sound healing sessions at ZenSpace are absolutely magical. I leave feeling renewed and centered. This place has become my sanctuary for mental and physical wellness."
+        </p>
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-slide">
+      <div class="testimonial-card">
+        <div class="user-info">
+          <div class="avatar green"><i class="fas fa-user"></i></div>
+          <div>
+            <h3>Emma Thompson</h3>
+            <p>Marketing Executive</p>
+          </div>
+        </div>
+        <p class="testimonial-text">
+          "ZenSpace transformed my approach to wellness. The instructors are incredibly knowledgeable, and the peaceful environment helped me find the balance I was desperately seeking."
+        </p>
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-slide">
+      <div class="testimonial-card">
+        <div class="user-info">
+          <div class="avatar blue"><i class="fas fa-user"></i></div>
+          <div>
+            <h3>David Kim</h3>
+            <p>Software Developer</p>
+          </div>
+        </div>
+        <p class="testimonial-text">
+          "After years of stress and burnout, ZenSpace gave me the tools to reconnect with myself. The meditation sessions and yoga classes have become an essential part of my routine."
+        </p>
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+    </div>
+
+    <button class="nav-btn right-btn" onclick="changeSlide(1)">&#10095;</button>
   </div>
-  <div class="testimonial-slide">
-    <p>“A perfect getaway from daily stress. Highly recommended.”</p>
-    <h4>- Meera S.</h4>
+
+  <div class="dots">
+    <span class="dot active-dot" onclick="goToSlide(0)"></span>
+    <span class="dot" onclick="goToSlide(1)"></span>
+    <span class="dot" onclick="goToSlide(2)"></span>
   </div>
-</div>
-  </section>
+</section>
+
 
   <!-- Contact -->
   <section class="contact" id="contact">
@@ -258,17 +317,32 @@
   <img src="images/whatsapp.jpeg" alt="WhatsApp Icon" />
 </a>
 <script>
-  let current = 0;
+  let currentSlide = 0;
   const slides = document.querySelectorAll('.testimonial-slide');
+  const dots = document.querySelectorAll('.dot');
 
-  function showNextSlide() {
-    slides[current].classList.remove('active');
-    current = (current + 1) % slides.length;
-    slides[current].classList.add('active');
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+      dots[i].classList.toggle('active-dot', i === index);
+    });
+    currentSlide = index;
   }
 
-  setInterval(showNextSlide, 4000); // Change every 4 seconds
+  function changeSlide(direction) {
+    let nextSlide = currentSlide + direction;
+    if (nextSlide >= slides.length) nextSlide = 0;
+    if (nextSlide < 0) nextSlide = slides.length - 1;
+    showSlide(nextSlide);
+  }
+
+  function goToSlide(index) {
+    showSlide(index);
+  }
+
+  setInterval(() => changeSlide(1), 5000); // Auto-scroll every 5 seconds
 </script>
+
 
 </body>
 </html>
