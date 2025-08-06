@@ -294,6 +294,33 @@ html {
   min-width: 280px;
 }
 
+.about-features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 30px;
+  text-align: center;
+}
+
+.feature-box {
+  flex: 1 1 250px;
+  max-width: 300px;
+  padding: 20px;
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: #333;
+}
+
 /* Testimonials */
 .testimonials {
   background: #f0fdf4;
